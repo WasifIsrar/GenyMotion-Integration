@@ -26,8 +26,8 @@ jobs:
           adb devices
       - name: Install and Run Appium Server
         run: |
-          chmod +x ./Scripts/RunAppiumServer.sh 
-          ./Scripts/RunAppiumServer.sh
+          chmod +x ./RunAppiumServer.sh 
+          ./RunAppiumServer.sh
       - name: Run Tests
         run: mvn clean test
       - name: Stop Instances
